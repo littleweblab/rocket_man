@@ -1,0 +1,62 @@
+// BRICKS CSS Framework /BASE/ Master Version 1.0
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * This is the file for global configuartion of bricks container
+ */
+// Basic PAGE option 
+PAGE()
+    position relative
+
+// Basic GRID option 
+GRID()
+    if $showGrid == true 
+        background-repeat no-repeat
+        background-position 100% 100%
+    position relative  
+    font-size 0
+    width 100%  // -->  Solves the white-Space Problem for the inline-block System
+
+
+// Basic CONTAINER option 
+CONTAINER()
+    display block
+    position relative
+    width auto
+    word-wrap break-word
+    overflow hidden
+    
+   
+CONTENT()
+    width 100%
+
+
+// Basic STICKER option 
+STICKER()
+    position absolute
+    display block
+
+BUTTON()
+    position relative
+    display inline-block
+    cursor pointer
+    overflow hidden 
+ 
+/*
+* CREATE CLASSES
+*/
+  
+.GRID
+    GRID()
+
+.CONTAINER
+    CONTAINER()
+
+.STICKER
+    STICKER()
+
+.BUTTON
+    BUTTON()
+
+.PAGE
+    PAGE()

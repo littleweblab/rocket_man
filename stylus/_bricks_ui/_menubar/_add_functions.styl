@@ -1,0 +1,32 @@
+$mymenuname = ITEM-menubar
+
+menubar-function-a-item()
+    background-color #fff
+    font-size 11px
+    font-style italic
+    margin-top 16px
+    margin-right 5px
+    padding-top 4px
+    padding-bottom 3px
+    padding-left 15px
+    padding-right 15px
+    color #303030
+    box-shadow #000 1px 1px 7px
+    -moz-box-shadow #000 1px 1px 7px
+    -webkit-box-shadow #000 1px 1px 7px
+    HOVER-opacity()
+
+.FUNCTION-menubar
+    MENU-horizontal($mymenuname)
+    TakeMyKidsWidth()
+    GiveMeOpacity(50)
+    margin-left 35px
+    
+    a.{$mymenuname}, a.{$mymenuname}-first, a.{$mymenuname}-last   
+        menubar-function-a-item()
+        GiveMeOpacity(30)
+    
+    a.{$mymenuname}-selected  
+        menubar-function-a-item() 
+        GiveMeOpacity( 100 )
+        

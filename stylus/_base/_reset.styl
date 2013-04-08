@@ -1,0 +1,109 @@
+// BRICKS CSS Framework /BASE/ Browserreset:Version 1.1
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * Resets the default styles settings of the different Browsers. 
+ * Idea based on reset.css by Eric Meyer 
+ */
+ 
+HardResetAll()
+    margin 0
+    padding 0
+    border 0
+    outline 0
+    letter-spacing -4px
+    font-weight inherit
+    font-size 100%
+    font-family inherit
+    text-decoration none
+    font-style normal
+    font-weight normal
+    vertical-align top
+    min-height 0
+    background-image none
+    background-color transparent
+    background-repeat no-repeat
+
+HardResetContent()  
+    line-height 100% // --> Set the default line-height again (See special reset for Body above)
+    letter-spacing normal
+
+/*
+ * Global reset for allmost all elements
+ */
+  
+reset()
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, dir, menu, fieldset, form, label, legend, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td
+       margin 0
+       padding 0
+       border 0
+       outline 0
+       letter-spacing -4px
+       font-weight inherit
+       font-size 100%
+       font-family inherit
+       text-decoration none
+       font-style normal
+       font-weight normal
+       vertical-align top
+
+reset()
+
+// Special reset for focus
+:focus// remember to define focus styles!
+    outline 0
+
+// Special reset for <body>
+body
+    color black
+    background white
+    line-height 0 //--> removes spots between the matrix div container (only if overflow of a container is another than visible)
+
+// Special reset for allmost Elements without <div> & <body> & <menu>
+span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, dir, fieldset, form, label, legend, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td
+    line-height 100% // --> Set the default line-height again (See special reset for Body above)
+    letter-spacing normal
+    
+
+// Special reset for <div>
+div
+    display -moz-inline-stack
+    display inline-block
+    vertical-align top
+
+// Special reset for lists
+ol, ul, dir, menu
+    list-style none
+
+// Special reset for <table>
+table // --> tables still need 'cellspacing="0"' in the markup
+    border-collapse separate
+    border-spacing 0
+    width 100%
+
+caption, th, td // --> and his elements 
+    text-align left
+    font-weight normal
+
+// Special reset for <blockquote>
+blockquote
+    &:before, &:after
+       content: ""
+
+q
+    &:before, &:after
+       content: ""
+
+blockquote, q
+    quotes: "" ""
+
+// Special reset for <img>
+img
+    border 0
+    vertical-align bottom 
+
+li
+    list-style-position outside
+
+a 
+    cursor pointer

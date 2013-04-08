@@ -1,0 +1,40 @@
+$mymenuname = ITEM-medithumb
+
+// .FUNCTION-medithumb
+//   background-image: url('../images/ui/medithumb/ui_bg_function_medithumb.png')
+//   background-repeat: no-repeat
+//   background-position: 0 0
+//   padding-left: 14px
+//   padding-bottom: 14px
+//   white-space: nowrap
+
+medithumb-function-a-item()
+    UI()
+    NoWrapForMyKids()
+    color #fff
+    font-size 11px
+    margin-top 3px
+    padding-top 3px
+    padding-bottom 2px
+    padding-right 6px
+    padding-left 6px
+    font-style italic
+    width auto
+    HOVER-underline()
+
+.FUNCTION-medithumb
+    MENU-horizontal($mymenuname)
+    NoWrapForMyKids()
+    TakeMyKidsWidth()
+    min-width 21px
+   
+    a.{$mymenuname} 
+        medithumb-function-a-item()
+    
+    a.{$mymenuname}-first
+        medithumb-function-a-item()
+        cursor pointer
+
+    a.{$mymenuname}-last
+        medithumb-function-a-item()
+        cursor pointer

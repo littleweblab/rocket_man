@@ -1,0 +1,33 @@
+$mymenuname = ITEM-listGridSwitch
+
+listGridSwitch-function-a-item()
+    UI()
+    NoWrapForMyKids()
+    color #1d1c20
+    height 18px
+    font-size 11px 
+    font-style italic
+    cursor pointer
+    overflow hidden
+    text-indent -1000px
+
+.FUNCTION-listGridSwitch
+    MENU-horizontal($mymenuname)
+    NoWrapForMyKids()
+    TakeMyKidsWidth()
+    min-width 21px
+  
+    a.{$mymenuname} 
+        listGridSwitch-function-a-item()
+        
+    a.{$mymenuname}-selected
+        listGridSwitch-function-a-item()
+        GiveMeRoundCorners(3px)
+        background-color #9b9b9b
+        background-position 0 100%
+    
+    a.{$mymenuname}-first
+        listGridSwitch-function-a-item()
+    
+    a.{$mymenuname}-last
+        listGridSwitch-function-a-item()

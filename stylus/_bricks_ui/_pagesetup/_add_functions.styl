@@ -1,0 +1,31 @@
+$mymenuname = ITEM-pagesetup
+
+pagesetup-function-a-item()
+    UI()
+    color #fff
+    font-size 11px
+    font-style italic
+    width auto
+    margin-left: 13px
+    width 16px
+    margin-top: -3px
+
+.FUNCTION-pagesetup
+    MENU-vertical($mymenuname)
+    li.{$mymenuname}-first, li.{$mymenuname}-last, li.{$mymenuname}
+      background-image url( '../images/ui/pagesetup/ui_bg_function_medithumb.png' )
+      background-repeat repeat-y 
+      background-position 0 0
+      height: 35px
+      margin-top: -3px
+
+
+      
+    a.{$mymenuname} 
+        pagesetup-function-a-item()
+    a.{$mymenuname}-first
+        pagesetup-function-a-item()
+        cursor pointer
+    a.{$mymenuname}-last
+        pagesetup-function-a-item()
+        cursor pointer

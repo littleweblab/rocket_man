@@ -1,0 +1,29 @@
+$mymenuname = ITEM-choiceSwitch
+
+choiceSwitch-function-a-item()
+  color #7a7a7b
+  font-style italic
+  font-size 12px
+  padding-top 7px
+  padding-bottom 7px
+  padding-left 5px
+  padding-right 5px
+  
+.FUNCTION-choiceSwitch
+    MENU-horizontal($mymenuname)
+    
+    a.{$mymenuname}, a.{$mymenuname}-first, a.{$mymenuname}-last   
+        choiceSwitch-function-a-item()
+       
+    a.{$mymenuname}-selected  
+        GiveMeRoundCorners( 6px )
+        GiveMeShadow( rgba( 0, 0, 0, 0.4 ), 2px, 3px, 8px)
+        background-color #7a7a7b
+        color #fdfdfd
+        font-size 11px
+        font-weight bold
+        padding-top 6px
+        padding-bottom 9px
+        padding-left 7px
+        padding-right 7px
+               

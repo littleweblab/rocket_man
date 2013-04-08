@@ -1,0 +1,138 @@
+// LIGHT  
+
+.STYLE-given
+    background-color #fff
+    background-image url('../images/ui/panel/ui_bg_conatiner_panel.png')
+    background-repeat repeat-y
+    background-position 0 0
+    width 100% 
+    
+.FUNCTION-browse li, .FUNCTION-browse 
+
+    .STYLE-itemBrowseBorder
+        border-bottom 1px solid #e0e0e0
+    
+    .STYLE-itemBrowseBorderDotted
+        border-bottom 1px dotted #e0e0e0
+    
+    .STYLE-itemBrowseTopDotted
+        border-top 1px dotted #e0e0e0
+        
+    .STYLE-itemBrowseRightDotted
+        border-right 1px dotted #e0e0e0
+
+    .STYLE-itemBrowseText, li.STYLE-itemBrowseText
+        UI()
+        color #757575
+        font-size 11px
+        line-height 14px
+
+    .STYLE-itemBrowseBigLetter, li.STYLE-itemBrowseBigLetter
+        ItemBrowseBigLetter-STYLE()
+    
+    .STYLE-NoPadding, li.STYLE-NoPadding
+        padding-left 0 
+        padding-right 0
+        padding-top 0
+        padding-bottom 0
+        
+    .STYLE-NoPaddingLeftRight, li.STYLE-NoPaddingLeftRight
+        padding-left 0 
+        padding-right 0
+        
+    .STYLE-NoPaddingBottom, li.STYLE-NoPaddingBottom
+        padding-bottom 0 
+        
+    .STYLE-NoPaddingTop, li.STYLE-NoPaddingTop
+        padding-top 0
+
+
+    // .UI-CONTAINER-option .FUNCTION-browse li, .UI-CONTAINER-option .FUNCTION-browse 
+    //     .STYLE-NoPadding, li.STYLE-NoPadding
+    //         @extend .STYLE-NoPadding
+    // 
+    // .UI-CONTAINER-option .FUNCTION-browse li, .UI-CONTAINER-option .FUNCTION-browse 
+    //     .STYLE-NoPaddingLeftRight, li.STYLE-NoPaddingLeftRight       
+    //         @extend .STYLE-NoPaddingLeftRight
+
+
+    // DARK
+    
+    .STYLE-itemBrowseBorder-dark
+        border-bottom 1px solid #444
+
+    .STYLE-itemBrowseText-dark
+        UI()
+        color #757575
+        font-size 11px
+        line-height 14px
+        color #8c8b8d
+
+    .STYLE-itemBrowseBigLetter-dark
+        font-size 18px
+        text-transform uppercase
+        padding-top 8px
+        min-height 24px
+        color #424242
+
+    .STYLE-icon-mini-dark
+        background-image url('../images/ui/browse/ui_bg_icon_arrowsdark_mini.png')
+
+    // FILE
+
+    .STYLE-itemBrowseBorder-files
+            border-bottom 1px dotted #e0e0e0
+
+    .STYLE-icon-mini-files
+        background-image url('../images/ui/browse/ui_bg_style_itembrowsefiles.png')
+        background-repeat no-repeat
+        background-position 6px 0px
+        color #444444
+        padding-top 13px
+        padding-left 12px
+        font-size 8px
+        line-height 10px
+        font-weight bold
+
+.STYLE-setupArrow
+    GiveMeOpacity(60)
+
+browseFile()
+    CONTAINER()
+    TakeMyKidsWidth()
+    padding-top 14px
+    padding-bottom: 14px
+
+.STYLE-fileFileName
+    browseFile()
+    width: 105px
+    border-right 1px solid #e0e0e0
+    padding-right: 10px
+    padding-left: 10px
+    font-weight bold
+    overflow hidden
+
+.STYLE-fileFileType
+    browseFile()
+    text-transform uppercase
+    padding-left 11px
+
+.STYLE-fileFileRemove
+    browseFile()
+    text-transform uppercase
+    padding-top 11px
+    padding-left 4px
+    padding-bottom: 13px
+  
+.STYLE-browse-content-divider 
+    display inline-block
+    margin-top 2px
+    margin-left 7px
+    margin-right 7px
+    width 2px 
+    background-color #e0e0e0
+    height 10px
+
+.FUNCTION-browse .STYLE-browse-alignLeft
+  text-align left
+    

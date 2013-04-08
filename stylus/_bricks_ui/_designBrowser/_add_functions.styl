@@ -1,0 +1,48 @@
+$mymenuname = ITEM-designBrowserPreview
+
+.FUNCTION-designBrowserPreview
+    MENU-horizontal($mymenuname)
+    CONTAINER()
+    text-align center
+    margin-right -30px
+ 
+a.{$mymenuname}
+    CONTAINER()
+    TakeMyKidsWidth()
+    width 122px
+    padding-top 6px
+    padding-right 8px
+    padding-left 6px
+    margin-right 23px
+    
+    span.STYLE-designBrowserIcon
+        UI()
+        CONTAINER()
+        GiveMeShadow( #242425, 1px ,1px ,8px)
+        display block
+        width 122px
+        height 100px
+        //text-indent -3000px
+        margin-bottom 15px
+        background-image url('../images/ui/designbrowser/ui_bg_style_design_browser_icon.png')
+        background-repeat no-repeat
+        background-position 41px 21px
+        cursor pointer
+
+    span.STYLE-designBrowserLabel
+        CONTAINER()
+        TakeMyKidsWidth()
+        GiveMeRoundCorners(12px)
+        background-color #2a2a2a
+        font-size 11px
+        padding-left 8px
+        padding-right 8px
+        padding-top 2px
+        padding-bottom 4px
+        color #6a6b6a
+        margin-bottom 22px
+
+    &:hover
+        span.STYLE-designBrowserLabel 
+            background-color #6b9ed4
+            color #fff

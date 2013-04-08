@@ -1,0 +1,26 @@
+// BRICKS CSS Framework /EXTRAS/ Shadow:Version 1.0 
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * Configure basic shadows
+ */
+
+GiveMeShadow($color=#000, $horizontal=10px, $vertical=10px, $blur=5px)
+    box-shadow $color $horizontal $vertical $blur
+    -moz-box-shadow $color $horizontal $vertical $blur
+    -webkit-box-shadow $color  $horizontal $vertical $blur
+
+RemoveMyShadow($color=none)
+    box-shadow $color
+    -moz-box-shadow $color
+    -webkit-box-shadow $color 
+
+GiveMeInnerShadow($color=#000, $horizontal=10px, $vertical=10px, $blur=5px)
+    box-shadow inset $color $horizontal $vertical $blur
+    -moz-box-shadow inset $color $horizontal $vertical $blur
+    -webkit-box-shadow inset $color $horizontal $vertical $blur
+
+RemoveMyInnerShadow($color=none)
+    box-shadow $color
+    -moz-box-shadow $color
+    -webkit-box-shadow $color

@@ -1,0 +1,132 @@
+$mymenuname = ITEM-browse
+
+ItemBrowseBigLetter-STYLE()
+    font-size 18px
+    text-transform uppercase
+    padding-top 8px
+    min-height 24px
+
+ITEM-browse()
+    UI()
+    color #000
+    font-weight bold
+    font-size 12px
+    min-height 26px
+    padding-top 6px
+    padding-bottom 5px
+    padding-right 21px
+    padding-left 14px
+    width auto
+    //height 100%
+    cursor pointer
+   
+ITEM-browse-dark()
+    ITEM-browse()
+    background-image url('../images/ui/browse/ui_bg_style_itembrowsebigdark.png')
+    background-repeat repeat-x
+    color #363536
+    background-color #555555
+
+ITEM-browse-files()
+    ITEM-browse()
+    padding-left 42px
+    padding-bottom 4px
+    color #444444
+    font-size 12px
+    line-height 14px
+    padding-top 16px
+    font-weight normal
+    
+// MENU BODY
+
+.FUNCTION-browse
+    MENU-vertical($mymenuname)
+
+    li .{$mymenuname}, li.Default
+        ITEM-browse()
+
+    li .First, li.First  
+        //ITEM-browse()
+        background-image url('../images/ui/browse/ui_bg_style_itembrowse_first.png') 
+        background-repeat repeat-x
+        background-position 0 0
+    
+    li .Back, li.Back
+        ITEM-browse()
+        background-image url('../images/ui/browse/ui_bg_style_itembrowseBack.png')
+        background-repeat repeat-x
+        background-position 0 0
+        color #fff !important
+        padding-left 33px  
+    
+    li  .Header, li.Header
+        ITEM-browse()
+        background-image url('../images/ui/browse/ui_bg_style_itembrowseheader.png') 
+        ItemBrowseBigLetter-STYLE()
+        color #969596
+        
+    li  .Setup, li.Setup
+        ITEM-browse()
+        background-color #e2e2e2
+        font-weight normal
+        color #b7b7b7
+        font-size 13px
+        padding-left 47px
+        min-height 21px
+        padding-top 11px
+        padding-bottom 5px
+        
+    li  .RelatedItem, li.RelatedItem
+        ITEM-browse()
+        //background-color #f0f0f0
+        //background-color #e2e2e2
+        background-image url('../images/ui/browse/ui_bg_style_relateditem.png') 
+        background-position 100% 0
+        color #9a9a9a
+        font-size 11px
+        font-weight: strong !important
+        padding-left 17px
+        min-height 18px
+        padding-top 4px
+        padding-bottom 0
+        margin-bottom: 3px
+        
+    // DARK
+    
+    li .{$mymenuname}-dark, li.Default-dark
+        ITEM-browse-dark()
+    
+    li .Back-dark, li.Back-dark  
+        ITEM-browse()
+        background-image url('../images/ui/browse/ui_bg_style_itembrowseBack.png')
+        background-repeat repeat-x
+        background-position 0 0
+        color #fff !important
+        padding-left 33px
+     
+    li .First-dark, li.First-dark  
+        ITEM-browse-dark()
+        background-image url('../images/ui/browse/ui_bg_style_itembrowsebigdark_first.png')
+
+    // FILE
+
+    li .{$mymenuname}-files, li.Default-files
+        ITEM-browse-files()
+        
+.HELPER-textStyles 
+    min-height 21px
+    padding-top 4px
+    padding-bottom 0px
+    padding-left 27px
+    *
+        text-align left
+        padding-left 0 !important
+        padding-right 0 !important
+        margin-left 0 !important
+        margin-right 0 !important
+
+.HELPER-browseDontMove
+    cursor default !important
+
+.HELPER-browseSortablePlaceholder
+    background-image: url('../images/ui/browse/ui_bg_helper_sortable_placeholder.png')

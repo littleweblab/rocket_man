@@ -1,0 +1,36 @@
+// BRICKS CSS Framework /BASE/ Align:Version 1.0 
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * Configure align for relative elements without using floating
+ * right:xy; does not work in Opera 10 and below, use margin instead! 
+ * For elements below AlignMyChilds in the DOM a new direction must be configured.
+ */
+
+// Align an element right
+AlignMyKidsRight()
+    direction rtl
+    right 0
+    
+// Align an element left
+AlignMyKidsLeft()
+    direction ltr
+    left 0
+
+/*    
+ * CREATE CLASSES
+ */
+
+.AlignMyKidsRight
+    AlignMyKidsRight()
+       
+.AlignMyKidsLeft
+    AlignMyKidsLeft()
+
+// Helps to align text in the right direction
+.TextAlignLeft
+  text-align left !important
+.TextAlignRight
+  text-align right !important
+.TextAlignCenter
+  text-align center !important

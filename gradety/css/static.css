@@ -1,0 +1,45 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,dir,menu,fieldset,form,label,legend,textarea,select,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;letter-spacing:-4px;font-weight:inherit;font-size:100%;font-family:inherit;text-decoration:none;font-style:normal;font-weight:normal;vertical-align:top}
+:focus{outline:0}
+body{color:#000;background:#fff;line-height:0}
+span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,dir,fieldset,form,label,legend,textarea,select,table,caption,tbody,tfoot,thead,tr,th,td{line-height:100%;letter-spacing:normal}
+div{display:-moz-inline-stack;display:inline-block;vertical-align:top}
+ol,ul,dir,menu{list-style:none}
+table{border-collapse:separate;border-spacing:0;width:100%}
+caption,th,td{text-align:left;font-weight:normal}
+blockquote:before,blockquote:after{content:""}
+q:before,q:after{content:""}
+blockquote,q{quotes:"" ""}
+img{border:0;vertical-align:bottom}
+li{list-style-position:outside}
+a{cursor:pointer}
+.GRID{background-repeat:no-repeat;background-position:100% 100%;position:relative;font-size:0;width:100%}
+.CONTAINER{display:block;position:relative;width:auto;word-wrap:break-word}
+.STICKER{position:absolute;display:block}
+.BUTTON{position:relative;display:inline-block;cursor:pointer;overflow:hidden}
+.PAGE{position:relative}
+menu{font-size:0 !important;letter-spacing:normal;vertical-align:top;}
+menu li{line-height:0;font-size:0;display:block;vertical-align:top;position:relative;}
+menu li a{vertical-align:top;display:block}
+.TakeMyKidsWidth{display:inline-block;width:auto;*zoom:1;*display:inline;*width:auto}
+.TakeMyOwnWidth{display:block;width:auto;*zoom:normal}
+.LetMySiblingsFloat{float:left}
+.LetMySiblingsRightFloat{float:right}
+.NoWrapForMyKids{white-space:nowrap}
+.AlignMyKidsRight{direction:rtl;right:0}
+.AlignMyKidsLeft{direction:ltr;left:0}
+.TextAlignLeft{text-align:left !important}
+.TextAlignRight{text-align:right !important}
+.TextAlignCenter{text-align:center !important}
+.PAGE,#PAGE{width:600px;min-height:auto;_height:auto;background-color:#fefeff;margin-left:auto;margin-right:auto}
+.PAGE-SETUP-LEFT{margin-right:auto;margin-left:0}
+.PAGE-SETUP-RIGHT{margin-left:auto;margin-right:0}
+.PAGE-SETUP-CENTER{margin-left:auto;margin-right:auto}
+.PAGE,#PAGE{display:block}
+body{background-color:#272727;background-image:url("../images/ui/bg_ui.jpg");background-repeat:repeat;background-position:0 0}
+h1,h2,h3,h4,h5,h6,p,blockquote,address,ul,ol,dir,dl,table,menu li{font-size:12px;font-family:Arial;color:#000;line-height:auto;word-spacing:normal;white-space:normal}
+.FUNCTION-horizontal{display:block;width:auto;*zoom:normal;display:inline-block;width:auto;*zoom:1;*display:inline;*width:auto}
+.FUNCTION-horizontal li.ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-default,.FUNCTION-horizontal li.ITEM-horizontal-first,.FUNCTION-horizontal li.ITEM-horizontal-last,.FUNCTION-horizontal li.ITEM-horizontal-selected,.FUNCTION-horizontal li.ITEM-horizontal-first-selected,.FUNCTION-horizontal li.ITEM-horizontal-last-selected{display:inline-block;width:auto;*zoom:1;*display:inline;*width:auto;*white-space:nowrap;}
+.FUNCTION-horizontal li.ITEM-horizontal .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-default .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-first .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-last .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-selected .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-first-selected .ITEM-horizontal,.FUNCTION-horizontal li.ITEM-horizontal-last-selected .ITEM-horizontal{*white-space:nowrap;}
+.FUNCTION-vertical{display:block;width:auto;*zoom:normal;}
+.FUNCTION-vertical li.ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-default,.FUNCTION-vertical li.ITEM-vertical-first,.FUNCTION-vertical li.ITEM-vertical-last,.FUNCTION-vertical li.ITEM-vertical-selected,.FUNCTION-vertical li.ITEM-vertical-first-selected,.FUNCTION-vertical li.ITEM-vertical-last-selected{display:block;}
+.FUNCTION-vertical li.ITEM-vertical .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-default .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-first .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-last .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-selected .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-first-selected .ITEM-vertical,.FUNCTION-vertical li.ITEM-vertical-last-selected .ITEM-vertical{display:block}

@@ -1,0 +1,47 @@
+$mymenuname = ITEM-modeSelection
+
+.FUNCTION-modes
+    STICKER()
+    text-align left
+    padding-left 62px
+    min-width 68px
+    height 133px
+    left 0
+    bottom 0
+    background-image url('../images/ui/modes/ui_bg_functions_modes_select_alt.png')
+    background-repeat no-repeat
+    background-position 0 0
+
+.FUNCTION-showHideModeSelection
+    AlignMyKidsRight()
+    overflow hidden
+    display none
+    height 133px
+    background-image url('../images/ui/modes/ui_bg_functions_modeselection.png')
+    background-repeat no-repeat
+    background-position 100% 0
+    padding-left 62px
+    width 36px
+    padding-right 12px
+   
+.FUNCTION-modeSelection
+    MENU-horizontal($mymenuname)
+    NoWrapForMyKids()
+    height 133px
+    position relative
+    background-image url('../images/ui/modes/ui_bg_modeselection.png')
+    background-repeat no-repeat
+    background-position 100% 0
+    
+    a.{$mymenuname} 
+        left 0
+        AlignMyKidsLeft()
+        padding-top 7px
+        padding-left 9px
+        width 47px !important
+        height 47px
+        margin-top 10px
+        cursor pointer
+        background-image url('../images/ui/modes/ui_bg_button_modeselection.png')
+        background-repeat no-repeat
+        background-position -3px 0

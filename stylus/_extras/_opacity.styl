@@ -1,0 +1,11 @@
+// BRICKS CSS Framework /EXTRAS/ Opacity:Version 1.0
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * Configure opacity as a single class object.
+ */
+
+GiveMeOpacity($transp=50)
+    opacity ($transp/100)
+    -moz-opacity ($transp/100)
+    filter unquote('alpha(opacity=' + $transp + ')')

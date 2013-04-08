@@ -1,0 +1,203 @@
+UI-content()
+    //+HardResetAll
+    //h1, h2, h3, h4, h5, h6, p, blockquote, address, ul, ol, dir, dl, table, menu li
+    UI()
+   
+    //////////////////////////////////////////////////
+    // SETUP HEADLINES >
+    //////////////////////////////////////////////////
+
+    // Global setup for all Headline 
+    // h1, h2, h3, h4, h5, h6
+    //    position: relative // > for margin problems width IE 6
+    //    margin-left: 16px
+    //    margin-right: 16px
+    //    margin-bottom: 16px
+    //    font-weight: bold
+    //    text-transform: uppercase
+
+    // Setup for the single Attributes 
+    h1
+        font-size 30px
+        color #d3d3d3
+        text-transform uppercase
+ 
+    h2
+        font-size 30px
+    
+    h3
+        font-size 26px
+        color orange
+    h4
+        font-size 22px
+        color #000
+
+    h5
+        font-size 18px
+        
+    h6
+        font-weight normal
+        color #a09fa0
+        padding-bottom 8px 
+        min-height 10px
+        padding-left 12px
+        font-size 12px
+        padding-top 6px
+        padding-right 21px
+        width auto
+    
+    //////////////////////////////////////////////////
+    // SETUP TEXTELEMENTS >
+    //////////////////////////////////////////////////
+
+    // Global setup for all Textelements
+    p, blockquote, address
+        position relative // > for margin problems width IE 6
+        margin-left 15px
+        margin-right 15px
+        margin-bottom 5px
+        visibility visible
+        margin-top 5px
+    
+    // Setup for the single Textelements
+    //p
+   
+    //blockquote 
+    //address
+
+    //////////////////////////////////////////////////
+    // SETUP LISTS >
+    //////////////////////////////////////////////////
+
+    // Global setup for all Listelements
+    ul, ol, dir, dl
+        position relative // > for margin problems width IE 6
+        color #fff
+        margin-left 16px
+        margin-right 16px
+        margin-bottom 16px
+        list-style-position outside
+    // 2
+    ul li, ol li, dir li 
+        margin-left 16px
+        margin-right 16px
+        margin-bottom 16px
+        list-style-position outside
+    dl dt, dl dd
+        margin-left 16px
+        margin-right 16px
+        margin-bottom 16px
+        list-style-position static
+
+    // Setup for the single Listelements
+    // 2
+    dir 
+        //2
+        li
+            margin-left 16px
+            margin-right 16px
+            margin-bottom 16px
+            list-style-position outside
+    ul 
+        // 2
+        li
+            list-style-type square
+
+    ol 
+        // 2
+        li
+            list-style-type decimal-leading-zero
+            list-style-position inside
+    dl 
+        // 2
+        dt 
+    dl 
+        // 2
+        dd
+
+    //////////////////////////////////////////////////
+    // SETUP TABLES >
+    //////////////////////////////////////////////////
+
+    // Global setup for all Tables
+    table
+        background: #ccc
+        border 4px solid orange
+
+    thead, tfoot, tbody
+        background-color #ffc
+
+    thead tr th, tfoot tr td, tbody tr td
+        border 1px solid red
+        padding 5px
+
+    thead
+        background #ccf
+        // 2
+        tr 
+            // 3
+            th
+    tfoot
+        background-color #ffa
+        // 2
+        tr 
+            // 3
+            td
+    tbody 
+        // 2
+        tr  
+            // 3
+            td
+
+    //////////////////////////////////////////////////
+    // SETUP INLINE-ELEMENTS >
+    //////////////////////////////////////////////////
+
+    // Global setup for all inline-elements 
+    //em, strong, code, samp, kbd, var, cite, dfn, span.abbr, abbr, acronym, q, del, ins, span
+
+    // Single inline-elemts
+    em
+        font-style italic
+    strong
+        font-weight bold 
+       
+    code
+        font-family Courier
+    //samp 
+    //kbd
+    //var 
+    //cite
+    //dfn
+    //span.abbr // > abbr{} doesen't work for IE6
+    //abbr 
+    //acronym
+    //q
+
+    del
+        text-decoration line-through
+    ins
+        text-decoration overline
+
+    // Setup Links
+    h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, blockquote a, address, ul li a, ol li a, dir li a
+        text-decoration underline
+        color #fff
+    dl
+        dd a, dt a
+            text-decoration underline
+    
+    // Setup links hover
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover, blockquote a:hover, address ul li a:hover, ol li a:hover, dir li a:hover
+        text-decoration none
+    dl
+        dd a:hover, dt a:hover
+            text-decoration none
+
+
+    // BRICKS CSSFramework / ContentElements:Version 1.0 
+    // Copyright (c) 2009 AUTHORS.txt (http://10YAFTER.COM/BRICKS)
+    // Define styles of Globel Content Elements used in all Areas of your Web-Project
+
+.UI-content
+    UI-content()

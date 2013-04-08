@@ -1,0 +1,66 @@
+// BRICKS CSS Framework /BASE/ Page Version 1.0
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * This is the file for the basic page setup
+ */
+
+PAGECONF()
+    width $pageWidth 
+    min-height $pageHeight
+    if $iesupport == true 
+        {'_height'} $pageHeight
+    background-color $pageColor
+ 
+/*
+ * CREATE CLASSES
+ */
+PAGEPOS()
+  if $pagePosition == left
+      margin-right auto
+      margin-left 0 
+  if $pagePosition == right
+      margin-left auto
+      margin-right 0
+  if $pagePosition == center
+      margin-left auto
+      margin-right auto
+
+.PAGE, #PAGE
+    PAGECONF()
+    PAGEPOS()
+
+.PAGE-SETUP-LEFT
+    margin-right auto
+    margin-left 0
+    
+.PAGE-SETUP-RIGHT
+    margin-left auto
+    margin-right 0
+
+.PAGE-SETUP-CENTER
+    margin-left auto
+    margin-right auto
+
+.PAGE,#PAGE
+    display block
+    
+/*
+ * REDEFINE TAGS
+ */
+    
+// Default html & body attributes
+body
+    background-color $bodyBgColor
+    background-image $bodyBgImage
+    background-repeat $bodyBgRepeat 
+    background-position $bodyBgPosition
+    
+// Default font attributes
+h1, h2, h3, h4, h5, h6, p, blockquote, address, ul, ol, dir, dl, table, menu li
+    font-size $pageFontSize
+    font-family $pageFontFamily
+    color $pageFontColor
+    line-height $pagelineHeight
+    word-spacing $pageWordSpacing
+    white-space $pageWhiteSpace

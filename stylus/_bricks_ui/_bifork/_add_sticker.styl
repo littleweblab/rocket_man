@@ -1,0 +1,132 @@
+.STICKER-helperFirstSplit
+    STICKER()
+    top: 50%
+    //margin-left: 10%
+    //margin-right: 10%
+    //width: 80%
+    width: 100%
+    //height: 40%
+
+.STICKER-helperFirstContainer
+    STICKER()
+    top: 0
+    left: 0
+  
+    
+.STICKER-templateingResize-n
+    STICKER()
+    left 50%
+    height 50px
+    top 3px
+    
+.STICKER-templateingResize-s
+    STICKER()
+    left 50%
+    height 50px
+    top -53px
+    //background red
+    
+.STICKER-templateingResize-w
+    STICKER()
+    //left -88px
+    left -97px
+    height 50px
+    width 100px
+    top 50%
+
+.STICKER-templateingResize-e
+    STICKER()
+    //left -8px
+    left 2px
+    height 50px
+    width 100px
+    top 50%
+
+.STICKER-biforkResizeVertical    
+    STICKER()
+    height 100%
+    width 5px
+    left 0
+    top 0
+    background #cddef0
+    //GiveMeOpacity(50)
+    
+.STICKER-biforkResizeHorizontal    
+    STICKER()
+    height 5px
+    width 100%
+    right 0
+    top 0
+    background #cddef0
+    //GiveMeOpacity(50)
+
+// FOR CONTAINER RESIZE    
+.ui-resizable-helperContainer 
+    
+    .STICKER-biforkResizeVertical    
+        STICKER()
+        height 100%
+        width 5px
+        right 0
+        top 0
+        background #cddef0
+
+    .STICKER-biforkResizeHorizontal    
+        STICKER()
+        width 30px
+        left 50%
+        background-color transparent
+        margin-left -16px
+        background-image url('../images/ui/bifork/ui_bg_ui_resizable_handle.gif')
+        height 6px
+        overflow hidden
+        background-repeat no-repeat
+        background-position -4px -10px
+        
+    .STICKER-templateingResize-n
+        STICKER()
+        left 50%
+        height 50px
+        top auto
+        bottom 4px 
+    
+    .STICKER-biforkResizeHorizontal  
+        top auto
+        bottom 0   
+
+// FOR STICKER RESIZE   
+.ui-resizable-helperSticker
+    //background red
+    
+    .STICKER-templateingResize-n
+        STICKER()
+        left 50%
+        height 50px
+        top -65px 
+        bottom auto
+   
+    .STICKER-templateingResize-s
+        STICKER()
+        left 50%
+        height 50px
+        top auto 
+        bottom -60px
+        
+    .STICKER-templateingResize-e
+        STICKER()
+        right -110px
+        left auto 
+        height 50px
+        width 100px
+        top 50%
+        
+    .STICKER-templateingResize-w
+        STICKER()
+        left -110px
+        height 50px
+        width 100px
+        top 50%
+
+    .STICKER-biforkResizeHorizontal  
+        top auto
+        bottom 0

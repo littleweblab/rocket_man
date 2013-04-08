@@ -1,0 +1,58 @@
+// BRICKS CSS Framework /BASE/ Floating:Version 1.3
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * To build a container with fexible width,
+ * based on his children instead of his parents width
+ */
+
+TakeMyKidsWidth()
+    display inline-block // !important
+    width auto
+    if $iesupport == true 
+        {'*zoom'} 1
+        {'*display'} inline //!important
+        {'*width'} auto //!important
+    
+TakeMyOwnWidth()
+    display block  // !important
+    width auto
+    if $iesupport == true 
+        {'*zoom'} normal
+    
+/*
+ * Orignal float
+ * Use the float as it was meant to be used.
+ */
+    
+LetMySiblingsFloat()
+    float left
+    
+LetMySiblingsRightFloat()
+    float right
+    
+/*
+ * Let the kids stand in a line.
+ */
+    
+NoWrapForMyKids()
+    white-space nowrap
+    
+/*
+ * CREATE CLASSES
+ */
+
+.TakeMyKidsWidth
+    TakeMyKidsWidth()
+
+.TakeMyOwnWidth
+    TakeMyOwnWidth()
+
+.LetMySiblingsFloat
+    LetMySiblingsFloat()
+
+.LetMySiblingsRightFloat
+    LetMySiblingsRightFloat()
+    
+.NoWrapForMyKids
+    NoWrapForMyKids()

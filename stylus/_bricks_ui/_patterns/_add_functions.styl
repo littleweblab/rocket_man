@@ -1,0 +1,39 @@
+$mymenuname = ITEM-patterns
+
+patterns-function-a-item()
+    padding-top 5px
+    padding-left 5px
+    padding-right 5px
+    text-align center 
+    height 89px
+    color #7b7b7b
+    cursor pointer
+
+patterns-functions-li-item()
+    margin-right 22px
+
+.FUNCTION-patterns
+    MENU-horizontal($mymenuname)
+    TakeMyKidsWidth()
+    NoWrapForMyKids()
+    
+    li.{$mymenuname}
+        margin-right 22px
+    
+    a.{$mymenuname}
+        patterns-function-a-item()
+        
+    a.{$mymenuname}-selected
+        patterns-function-a-item()
+        background #5e7792
+        color #edf0f3
+        GiveMeRoundCorners(4px)
+        
+    li.{$mymenuname}-dropzone
+        patterns-functions-li-item()
+        min-width 70px
+        
+    li.{$mymenuname}-addPattern
+        patterns-functions-li-item()
+        padding-top 73px
+        min-width 70px

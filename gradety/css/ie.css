@@ -1,0 +1,27 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 8, ../../../sass/_base/_iespecials.sass */
+menu {
+  zoom: 1;
+  display: inline;
+}
+
+/* line 12, ../../../sass/_base/_iespecials.sass */
+div {
+  zoom: 1;
+  display: inline;
+  width: 100%;
+}
+
+/* line 17, ../../../sass/_base/_iespecials.sass */
+menu {
+  width: 100%;
+}
+
+/* line 24, ../../../sass/_base/_iespecials.sass */
+span, applet, object, iframe, body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, dir, menu, fieldset, form, label, legend, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td {
+  vertical-align: bottom;
+}

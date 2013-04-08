@@ -1,0 +1,53 @@
+$mymenuname = ITEM-breadcrump
+
+menuhorizontal-a-item() 
+    background-image url('../images/ui/breadcrump/ui_bg_item_breadcrump.png')
+    background-repeat no-repeat
+    background-position 100% 0
+    font-size 14px
+    color #575758
+    cursor pointer
+    padding-top 8px
+    padding-bottom 10px
+    padding-left 12px
+    padding-right  54px
+
+
+.FUNCTION-breadcrump
+    MENU-horizontal($mymenuname)
+    TakeMyKidsWidth()
+        
+    a.{$mymenuname} 
+        menuhorizontal-a-item()
+        
+    a.{$mymenuname}-first 
+        menuhorizontal-a-item() 
+    
+    a.{$mymenuname}-last 
+        menuhorizontal-a-item() 
+        background-image url('../images/ui/breadcrump/ui_bg_item_breadcrump_last.png')
+        padding-left 26px
+        padding-right  20px
+        background-position 100% 100%
+    
+    a.{$mymenuname}-selected 
+        background-image url('../images/ui/breadcrump/ui_bg_item_breadcrump.png')
+        background-repeat no-repeat
+        background-position 100% 0
+        font-size 14px
+        color #45637f
+        cursor pointer
+        padding-top 8px
+        padding-bottom 10px
+        padding-left 12px
+        padding-right  54px
+       
+    span.{$mymenuname}-intro
+        menuhorizontal-a-item() 
+        CONTAINER()
+        font-size 14px
+        color #575758
+        //font-weight bold
+        padding-left 16px
+        padding-right  45px
+        cursor default

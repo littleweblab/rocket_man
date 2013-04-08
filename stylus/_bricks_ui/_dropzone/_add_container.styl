@@ -1,0 +1,53 @@
+CONTAINER-dropzone()
+    CONTAINER()
+    border-width 2px
+    border-style dashed
+    border-color #515151
+    GiveMeRoundCorners(10px)
+    padding-top 59px
+    padding-left 3px
+    padding-right 3px
+    padding-bottom 8px
+    background-image url('../images/ui/dropzone/ui_bg_conatiner_dropzone.png')
+    background-repeat no-repeat
+    background-position 50% 4px 
+    p
+        UI()
+        text-align center
+        color #7e7e7e
+        font-size 11px
+        line-height 12px
+
+.CONTAINER-dropzone
+    CONTAINER-dropzone()
+
+.CONTAINER-dropzone-selected
+    CONTAINER-dropzone()
+    background-image url('../images/ui/dropzone/ui_bg_conatiner_dropzone_selected.png')
+    background-position 50% 4px
+    background-color #5e7792
+    border-style solid 
+    border-color #5e7792
+    GiveMeShadow( #232223, 0, 4px, 8px)
+    p
+        color #edf0f3
+
+.CONTAINER-dropzone-active
+    CONTAINER-dropzone()
+    background-color #2a2a2a
+    background-position 50% 6px
+    padding-top 61px
+    padding-bottom 10px
+    border 0
+    padding-left 5px
+    padding-right 5px
+
+.CONTAINER-dropzone-hover
+    CONTAINER-dropzone()
+    background-color #3d3c3d
+    background-position 50% 6px
+    padding-top 61px
+    padding-bottom 10px
+    border 0
+    padding-left 5px
+    padding-right 5px

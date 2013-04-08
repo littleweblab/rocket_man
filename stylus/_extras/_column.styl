@@ -1,0 +1,18 @@
+// BRICKS CSS Framework /EXTRAS/ Column:Version 1.0
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * Configure universal columns 
+ */
+
+MyKidsAsColumns($number, $width=100%)
+    for $i in 1..$number
+        .COLUMN-{$i}
+            if  $i < $number
+                width (floor($width/$number))
+            else
+                width (ceil($width/$number))
+//TEST
+//
+//.MyKidsAsColumns
+//    MyKidsAsColumns(3)

@@ -1,0 +1,68 @@
+// BRICKS CSS Framework /BASE/ Menu:Version 1.0
+// Copyright (c) 2009 AUTHORS.txt at http://www.littleweblab.com/BRICKS
+
+/*
+ * To float the navigation list points use "floating.css" 
+ * Use <li> like a matrix element (floating and sizes)
+ * and <a> as a container. 
+ */
+
+// Menu
+menu
+    font-size 0 !important
+    letter-spacing normal // > for mozilla: solves problem with breaks in horizontal menu
+    vertical-align top
+    li
+        line-height 0
+        font-size 0 
+        display block
+        vertical-align top
+        position relative
+        a
+            vertical-align top
+            display block
+
+$menuNumber = 0
+$ITEM = ' '
+
+MENU-vertical($name, $width = false)
+    $menuNumber = $menuNumber + 1
+    $ITEM = ($name)
+    TakeMyOwnWidth()
+    if $width != false
+        width $width
+
+    li.{$ITEM}, li.{$ITEM}-default, li.{$ITEM}-first, li.{$ITEM}-last, li.{$ITEM}-selected, li.{$ITEM}-first-selected, li.{$ITEM}-last-selected
+        display block 
+        //display: inline doesn't work with stickes
+        if $width != false
+            width $width
+
+        .{$ITEM}
+            display block
+
+MENU-horizontal($name, $width = false, $wrap = false)
+    $menuNumber = $menuNumber + 1
+    $ITEM  = ($name)
+    TakeMyOwnWidth()
+
+    li.{$ITEM}, li.{$ITEM}-default, li.{$ITEM}-first, li.{$ITEM}-last, li.{$ITEM}-selected, li.{$ITEM}-first-selected, li.{$ITEM}-last-selected
+        TakeMyKidsWidth()
+        if $iesupport == true 
+            if $wrap == false
+                {'*white-space'} nowrap
+        if $width != false
+            width $width
+
+        .{$ITEM}
+            if $iesupport == true
+                if $wrap == false
+                    {'*white-space'} nowrap
+            if $width != false 
+                width $width
+
+// TEST...
+//.test
+//    MENU-vertical(foo)
+
+//MENU-horizontal(menuHorizontal)

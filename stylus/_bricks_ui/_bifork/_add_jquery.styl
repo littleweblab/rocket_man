@@ -1,0 +1,106 @@
+//JQUERY
+.ui-resizable-handle
+    background-color #dce6f0
+    position absolute
+    GiveMeOpacity(70)
+    z-index 9998
+   
+.ui-resizable-w
+    left 0
+    width 5px
+    LayerOnUI(0)
+    cursor col-resize
+
+.ui-resizable-n
+    top 0
+    height 5px
+    LayerOnUI(0)
+    cursor row-resize
+    
+.ui-resizable-s
+    bottom 0
+    height 5px
+    LayerOnUI(0)
+    cursor row-resize
+
+.ui-resizable-e
+    right 0
+    width 5px
+    LayerOnUI(0)
+    cursor col-resize
+  
+// FOR CONTAINER RESIZE      
+.CONTAINER 
+    .ui-resizable-w
+        left 0
+        width 3px
+        LayerOnUI(0)
+        cursor col-resize
+
+    .ui-resizable-n
+        top 0
+        height 3px
+        LayerOnUI(0)
+        cursor row-resize
+
+    .ui-resizable-e
+        right 0
+        width 3px
+        LayerOnUI(0)
+        cursor col-resize
+        
+    .ui-resizable-s
+        display inline-block
+        GiveMeOpacity(100)  
+        width 30px
+        left 50%
+        psoition relative
+        background-color #fff
+        margin-left -15px
+        height 7px
+        
+.STICKER-biforkResizeLine 
+    STICKER()
+    bottom 3px
+    left 50%
+    margin-left -9px
+    height: 1px
+    width 17px
+    background-color #a3a3a3
+
+//.ui-resizable-disabled
+//    .ui-resizable-s
+//        display none 
+
+
+// FOR CONTAINER RESIZE    
+.STICKER
+    .ui-resizable-handle  
+        GiveMeOpacity(100) 
+        background-color transparent
+        background-image url('../images/ui/bifork/ui_bg_sticker_ui_resizable_handle.png')
+    
+    .ui-resizable-s,.ui-resizable-n
+        height 6px
+    
+    .ui-resizable-e,.ui-resizable-w
+        width 6px    
+        
+    .ui-resizable-s
+        background-image url('../images/ui/bifork/ui_bg_sticker_ui_resizable_handle_s_w.png')
+        background-repeat repeat-x
+        background-position  100% 100%
+    
+    .ui-resizable-w
+        background-image url('../images/ui/bifork/ui_bg_sticker_ui_resizable_handle_s_w.png')
+        background-repeat repeat-y
+        background-position -6px 100%
+        
+    .ui-resizable-se
+        width 14px
+        height 14px
+        bottom 0
+        right 0
+        background-image url('../images/ui/bifork/ui_bg_sticker_ui_resizable_handle_se.png')
+        background-repeat repeat-y
+        background-position 0 0    

@@ -1,0 +1,35 @@
+$showGrid = true
+$iesupport = true
+$bodyBgColor = #272727
+$bodyBgImage = url('../images/ui/bg_ui.jpg')
+$bodyBgRepeat =  repeat
+$bodyBgPosition = 0 0
+$pagePosition = 'center'
+$pageWidth = 600px
+// $pageWidth = 100%
+//$pageHeight = 400px
+$pageHeight = auto
+$pageColor = #fefeff
+$pageFontSize = 12px
+$pageFontFamily = Arial
+$pageFontColor =  #000
+$pagelineHeight = auto
+$pageWordSpacing = normal
+$pageWhiteSpace = normal
+
+@import "_base/_reset"
+@import "_base/_master"
+@import "_base/_menu"
+@import "_base/_floating"
+@import "_base/_align"
+@import "_base/_page"
+
+$mymenuname = ITEM-horizontal
+
+.FUNCTION-horizontal
+  MENU-horizontal($mymenuname)
+  TakeMyKidsWidth()
+$mymenuname = ITEM-vertical
+
+.FUNCTION-vertical
+  MENU-vertical($mymenuname)

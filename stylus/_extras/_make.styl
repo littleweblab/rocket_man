@@ -1,0 +1,17 @@
+MakeGRID($name='name', $VerticalNumber=3, $VerticalWidth=300px, $HorinzontalNumber=2, $HorinzontalHeight=400px) 
+    .GRID-{$name}
+        width $VerticalWidth
+        height $HorinzontalHeight 
+        for $a in 1..$VerticalNumber
+            .GRID-{$name}-{$a}
+                GRID()
+                width: ($VerticalWidth/$VerticalNumber) 
+                height: $HorinzontalHeight
+                for $b in 1..$HorinzontalNumber
+                    .GRID-{$name}-{$a}-{$b}
+                        GRID()
+                        width ($VerticalWidth/$VerticalNumber)  
+                        height ($HorinzontalHeight/$HorinzontalNumber)
+
+//.TEST
+//    MakeGRID($name='name', $Vertica

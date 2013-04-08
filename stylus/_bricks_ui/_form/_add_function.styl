@@ -1,0 +1,165 @@
+FORM()
+    background #fff
+    GiveMeShadow( #a1a1a1, 1px, 1px, 8px )
+    GiveMeRoundCorners( 6px )
+    
+FORM-input-mix()
+    CONTAINER()
+    UI()
+    FORM()
+    overflow hidden
+    margin-bottom 9px
+    display none
+    
+.FORM
+    //position relative
+  
+    
+// Defaults form elements  
+input, select
+    UI()
+    width 100%
+ //LABEL    
+.FORM-label
+    CONTAINER()
+    UI()
+    text-align center
+    font-weight bold
+    color #3a393a
+    font-size 12px
+    padding-bottom 6px
+    
+a.FORM-button
+    BUTTON-ok()  
+    
+ //INPUT       
+div.FORM-input
+    FORM-input-mix()
+ 
+    p
+        UI()
+        padding 0
+        margin 0
+        min-height 25px
+        line-height 25px
+        text-align center
+        color #677e98
+        font-style italic 
+        height 25px
+        width 100%
+        
+ //INPUT FOR COLOR     
+div.FORM-input-color
+    FORM-input-mix()
+    padding-top 3px
+    padding-right 3px
+    padding-left 29px
+    padding-bottom 3px
+    p
+        UI()
+        padding 0
+        text-indent -14px
+        margin 0
+        min-height 19px
+        height 19px
+        line-height 19px
+        text-align center
+        color #677e98
+        font-size 12px !important
+        font-style italic 
+        
+    
+
+ //SELECT          
+.FORM-select
+    CONTAINER()
+    height 20px
+    display none
+    padding-bottom 14px  
+    padding-left 6px
+    padding-top 6px
+    overflow visible
+$mymenuname = ITEM-option
+    
+.FUNCTION-option
+    MENU-vertical($mymenuname)
+    FORM()
+    overflow hidden
+    li .{$mymenuname}
+        color #fff
+        line-height 19px
+        padding-left 25px
+        padding-right 25px
+        text-align center
+        color #677e98
+        font-style italic
+        cursor pointer
+        &:hover
+            background-color #cddef0
+        span.value 
+            display none
+            
+    li .First, li.First
+        HardResetAll() 
+        HardResetContent() 
+        color #fff
+        line-height 19px
+        padding-left 25px
+        padding-right 25px
+        text-align center
+        color #677e98
+        font-style italic
+        //border-bottom 1px solid green
+        &:hover
+            background-color transparent
+            
+div.FORM-search
+    FORM()
+    background-image url('../images/ui/form/ui_bg_search.png')
+    background-repeat no-repeat
+    background-position 3px 1px
+    border 0
+    GiveMeShadow( #c0c0c0, 1px, 1px, 8px )
+    GiveMeRoundCorners( 15px )
+    AlignMyKidsLeft()
+    p
+      UI()
+      padding-left 23px
+      margin 0
+      min-height 19px
+      line-height 19px
+      text-align left
+      color #474648
+      font-style normal
+      height 19px
+      width 100%
+     
+.FORM-checkBox
+    CONTAINER()
+    background-color #dddcde
+    width 44px
+    height 24px
+    margin-left auto
+    margin-right auto
+    -moz-border-radius 6px
+    -webkit-border-radius 6px
+    border-radius 6px
+    margin-top 1px
+    margin-bottom 9px
+    
+.FORM-radio
+    CONTAINER()
+    background-color transparent
+    background-image url('../images/ui/form/ui_bg_formradio.png')
+    background-position 0 0
+    background-repeat no-repeat
+    width 24px
+    height 24px
+    margin-left auto
+    margin-right auto
+    margin-top 1px
+    padding-bottom 11px  
+
+.FORM-fileupload 
+    BUTTON-flat() 
+    margin-left -4px

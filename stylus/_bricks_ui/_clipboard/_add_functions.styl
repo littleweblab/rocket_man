@@ -1,0 +1,121 @@
+clipboard-function-a-item()
+    width 45px
+    height 59px
+    padding-left 16px
+    padding-top 10px
+    padding-right 16px
+    margin-right -13px
+    background-image url('../images/ui/clipboard/ui_bg_clipboard_item.png')
+    background-repeat no-repeat
+    background-position 0 0
+    cursor pointer
+
+$mymenuname = ITEM-clipboard
+
+.FUNCTION-clipboard
+    MENU-horizontal($mymenuname)
+    TakeMyKidsWidth()
+    
+    a.{$mymenuname} 
+        clipboard-function-a-item()
+        
+    a.ITEM-copy
+        clipboard-function-a-item()
+        background-image url('../images/ui/clipboard/ui_bg_clipboard_item_copy.png')
+        cursor default
+        
+    a.ITEM-trash
+        margin-left 22px
+        width 101px
+        height 59px
+        background-image url('../images/ui/clipboard/ui_bg_item_trash.png')
+        background-repeat no-repeat
+        background-position 0 0
+        cursor default
+        text-indent: -20000
+
+$mymenuname = ITEM-clip
+        
+.FUNCTION-clip
+    MENU-vertical($mymenuname)
+    a.{$mymenuname} 
+        height 81px
+        width 81px
+        background-image url('../images/ui/clipboard/ui_bg_item_clip.png')
+        background-repeat no-repeat
+        background-position 0 0
+        margin-left 0
+
+//.FUNCTION-clip x
+//    display block
+//    bottom 70px
+//    position absolute
+//    left -40px      
+//    text-align left
+//    cursor pointer 
+
+//.FUNCTION-clip-grid 
+//    position relative
+//    height 81px
+//    background-image url('bgimg/bg_clip_matrix.png')
+//    background-repeat no-repeat
+//    background-position 0 0
+//    margin-left 0
+
+.FUNCTION-clip-filename  
+    TakeMyKidsWidth()
+    background-image url('../images/ui/clipboard/ui_bg_function_clip_file.png') 
+    background-repeat no-repeat 
+    background-position 100% 0
+    margin-top 24px
+    margin-left 73px
+    padding-top 5px
+    padding-right 20px
+    padding-bottom 21px
+    height 11px
+    color #5f5d5e
+    font-size 11px
+    
+.FUNCTION-showClipboard
+    STICKER()
+    background-color red
+    height 5px
+    width 100%
+    bottom 0px
+
+.HELPER-onDrag
+    GiveMeRoundCorners(12)
+    GiveMeShadow( #2a2a2a, 1px, 1px, 8px )
+    width: 86
+    height: 66
+    
+.HELPER-onCopyDrag
+    //STICKER()
+    GiveMeOpacity(0)
+    GiveMeRoundCorners(12)
+    
+HELPER-onDropLabel()
+    font-family arial !important
+    text-align center !important
+    color #fff !important
+    font-weight bold !important
+    font-size 14px !important
+    text-transform uppercase !important
+    padding-left 0 !important
+    padding-right 0 !important
+    paddimg-bottom 0 !important
+    padding-top 13px !important
+    margin 0 !important
+
+.HELPER-onDropLabel
+    HELPER-onDropLabel()
+
+.HELPER-onDragLabel
+    HELPER-onDropLabel()
+    padding-top 26px !important
+   
+    
+.HELPER-onDropLabelCopy
+    HELPER-onDropLabel()
+    padding-top 26px !important
+    
